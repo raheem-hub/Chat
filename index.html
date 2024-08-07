@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rim AI</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="chat-container border rounded shadow-sm">
+            <div class="chat-header bg-primary text-white d-flex align-items-center p-3">
+                <!-- <img src="logo.png" alt="Logo" class="logo mr-2"> -->
+                <h5 class="mb-0">Chat with Rim</h5>
+            </div>
+            <div class="p-3" id="chat-messages">
+                <!-- Chat messages will appear here -->
+            </div>
+            <div class="chat-input d-flex p-3 border-top">
+                <input type="text" autocomplete="off" id="chat-input" class="form-control mr-2" placeholder="Message Gemini AI">
+                <button id="send-button" class="btn btn-primary">Send</button>
+            </div>
+        </div>
+    </div>
+    <script type="importmap">
+      {
+        "imports": {
+          "@google/generative-ai": "https://esm.run/@google/generative-ai"
+        }
+      }
+    </script>
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
